@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<main role="main" class="container mt-5">
+  <div class="container">
+    <div class="text-center mt-5">
+      <h3>Dashboard page</h3>
+      <p class="text-bold " [innerHTML]="'Hi '+this.user.displayName+', your Firebase ID is '+this.user.localId"> </p>
+
+      <button class="btn btn-dashboard float-right" > Update password</button>  
+
+      <button class="btn btn-delete float-right  " (click)="onDeleteAccount()"  > Delete account</button>  
+    </div>
+  </div>
+</main>
